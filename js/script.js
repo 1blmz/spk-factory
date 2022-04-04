@@ -73,7 +73,7 @@ $(document).ready(function() {
         },
     });
     $(window).load(function () {
-         $('.home__slider-video').show();
+        $('.home__slider-video').show();
     });
     $.ripple('.is-ripples', {
         multi: true,
@@ -194,33 +194,4 @@ $(document).ready(function() {
             $('#searchBtn').find('span').html('Поиск');
         }
     });
-
-    const options = {
-        startVal: 100,
-		useEasing: true, 
-		useGrouping: true, 
-		separator: ' ', 
-		decimal: '.',
-	};
-
-var counterParent = document.getElementById('counter');
-var children = counterParent.children;
-
-    function countStart(){
-        $('#counter').addClass('active');
-		for (var i = 0; i < children.length; i++) {
-		 	var item = document.getElementById(children[i].id).querySelector('.counter');
-		 	var countValue = item.getAttribute('data-num');
-
-			var countUP = new CountUp(item, 100, countValue, 0, 2, options);
-			if (!countUP.error) {
-				countUP.start();
-			}
-		}
-	}
-
-	ScrollReveal().reveal('.sections__counters', { 
-		beforeReveal: countStart
-	});	
-  
 });

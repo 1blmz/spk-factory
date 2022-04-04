@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/new.css">
     <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="css/mmenu.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -49,11 +50,11 @@
             </a>
             <ul id="panel-menu">
                 <li><a href="/">Главная</a></li>
-                <li><a href="/typical.html">Продукция</a>
+                <li><a href="/catalog.html">Продукция</a>
                     <ul>
-                        <li><a href="/typical.html">Сведения об организации</a></li>
-                        <li><a href="/typical.html">Преподаватели</a></li>
-                        <li><a href="/typical.html">Вакансии</a></li>
+                        <li><a href="#">Сведения об организации</a></li>
+                        <li><a href="#">Руководство</a></li>
+                        <li><a href="#">Вакансии</a></li>
                     </ul>
                 </li>
                 <li><a href="/">Каталог проектов</a></li>
@@ -149,7 +150,7 @@
             </div>
         </div>
         <div class="sections">
-            <div class="sections__section home home--white" id="index">
+            <div class="sections__section sections__section--slider home home--white" id="index">
                 <div class="section__title-count hidden"></div>
                 <ul class="home__sliders">
                     <li class="home__slider">
@@ -469,7 +470,7 @@
                                     <div class="about__info-user d-flex flex-column">
                                         <b><h1>Суетин</h1> <br> Виктор Петрович</b>
                                         <div class="about__info-user-inner">
-                                            Генеральный директор <br> ПАО «СтройПанельКомплект» <br> Заслуженный строитель России
+                                            Генеральный директор <br> АО «СтройПанельКомплект» <br> Заслуженный строитель России
                                         </div>
                                     </div>
                                 </div>
@@ -761,6 +762,33 @@
     <script src="js/ripple.js"></script>
     <script src="js/countup.js"></script>
     <script>
+        const options = {
+            startVal: 100,
+            useEasing: true, 
+            useGrouping: true, 
+            separator: ' ', 
+            decimal: '.',
+        };
+        var counterParent = document.getElementById('counter');
+        var children = counterParent.children;
+
+        function countStart(){
+            $('#counter').addClass('active');
+            for (var i = 0; i < children.length; i++) {
+                var item = document.getElementById(children[i].id).querySelector('.counter');
+                var countValue = item.getAttribute('data-num');
+
+                var countUP = new CountUp(item, 100, countValue, 0, 2, options);
+                if (!countUP.error) {
+                    countUP.start();
+                }
+            }
+        }
+
+        ScrollReveal().reveal('.sections__counters', { 
+            beforeReveal: countStart
+        });	
+
         ymaps.ready(function () {
             // Создание экземпляра карты и его привязка к созданному контейнеру.
             var myMap = new ymaps.Map('map', {

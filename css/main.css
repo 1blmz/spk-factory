@@ -984,12 +984,12 @@ img {
   margin-bottom: 27px;
 }
 
-.catalog__item:nth-child(-n+4) {
+.catalog__item:nth-last-child(-n+4) {
   margin-bottom: 0;
 }
 
 .catalog__item:hover {
-  border-color: #A0DEF6;
+  border-color: #02A0E4;
   background: #A0DEF6;
   color: #000;
 }
@@ -1847,6 +1847,9 @@ img {
   .header__links {
     display: none;
   }
+  .sections .sections__section:first-child {
+    margin-top: 115px!important;
+  }
   .stats__item:before {
     content: none;
   }
@@ -2154,4 +2157,17 @@ img {
   .header__bottom .header__search {
     width: 50%;
   }
+}
+
+.sections .sections__section:first-child {
+  margin-top: 183px;
+}
+
+.sections__section--slider {
+  margin-top: 0!important;
+}
+
+.header__bottom {
+    border-top: solid 1px rgb(0 0 0 / 8%);
+    border-bottom: solid 1px rgb(0 0 0 / 8%);
 }

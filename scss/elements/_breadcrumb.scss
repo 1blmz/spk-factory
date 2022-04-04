@@ -1,0 +1,28 @@
+.breadcrumb {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 12px;
+    li {
+        margin-right: 38px;
+        a {
+            color: #717171;
+            &:hover {
+                color: #000;
+            }
+        }
+        &:last-child {
+            a {
+                color: $blue;
+                text-decoration: underline;
+            }
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .breadcrumb {
+        display: none;
+    }
+}

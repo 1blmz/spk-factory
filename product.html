@@ -131,113 +131,258 @@
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Продукция</a></li>
                         <li><a href="#">Железобетонные изделия</a></li>
+                        <li><a href="#">Сваи железобетонные</a></li>
                     </ul>
                     <div class="section__title d-flex flex-column">
-                        <div class="section__title-top d-flex align-center"><h1>Каталог продукции</h1></div>
+                        <div class="section__title-top d-flex align-center"><h1>Сваи железобетонные</h1></div>
                     </div>
-                    <div class="side-container">
-                        <div class="side-container__left">
-                            <div class="side-container__links-block d-flex flex-column">
-                                <nav class="side-container__links d-flex flex-column">
-                                    <li class="side-container__link--active"><a href="/category.html">ЖБИ</a></li>
-                                    <li><a href="/category.html">Металлоизделия</a></li>
-                                    <li><a href="/category.html">Пенополистирол</a></li>
-                                    <li><a href="/category.html">Арматурные изделия</a></li>
-                                </nav>
-                                <a href="#" class="side-container__link-more">Показать больше</a>
+                    <div class="product d-flex flex-column">
+                        <div class="product__item">
+                            <div class="product__info d-flex align-stretch">
+                                <div class="product__media d-flex flex-column">
+                                    <div class="product__media-slider-top">
+                                        <img src="images/product/1.png">
+                                        <img src="images/product/2.png">
+                                        <img src="images/product/3.png">
+                                        <img src="images/product/4.png">
+                                        <img src="images/product/5.png">
+                                    </div>
+                                    <div class="product__media-slider-bottom">
+                                        <img src="images/product/1.png">
+                                        <img src="images/product/2.png">
+                                        <img src="images/product/3.png">
+                                        <img src="images/product/4.png">
+                                        <img src="images/product/5.png">
+                                    </div>
+                                </div>
+                                <div class="product__info-inner d-flex flex-column justify-space-between">
+                                    <div class="d-flex flex-column">
+                                        <div class="product__text-item">
+                                            <h5>Описание</h5>
+                                            <p>Сваи цельные сплошного квадратного сечения, предназначены для свайных фундаментов зданий и сооружений. Сваи предназначены для применения во всех климатических районах.</p>
+                                            <p>&nbsp;</p>
+                                            <p>Область применения свай по грунтовым условиям приведена в приложении 1 ГОСТ 19804–91.</p>
+                                        </div>
+                                        <div class="product__text-item">
+                                            <h5>Основные характеристики</h5>
+                                            <ul class="product__characteristics">
+                                                <li class="d-flex flex-column">
+                                                    <b>Применение:</b>
+                                                    В строительстве для фундаментов зданий и сооружений при слабых и плотных грунтах.
+                                                </li>
+                                                <li class="d-flex flex-column">
+                                                    <b>Марка по прочности на сжатие:</b>
+                                                    от B20
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__text-item">
+                                            <h5>Цена: от 4 999 ₽</h5>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn is-ripples has-ripple" data-color="#6080B0" data-opacity="0.3" data-duration="0.3" tabindex="0">Получить прайс</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="side-container__right">
-                            <div class="category">
-                                <div class="category__list d-flex flex-wrap">
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/1.png">
+                        <div class="product__item">
+                            <ul class="tabs d-flex align-center justify-space-between">
+                                <li class="tabs__tab tabs__tab--active"><a href="#">Товары</a></li>
+                                <li class="tabs__tab"><a href="#">Паспорт</a></li>
+                                <li class="tabs__tab"><a href="#">Оплата</a></li>
+                                <li class="tabs__tab"><a href="#">Доставка</a></li>
+                            </ul>
+                            <div class="tabs-content">
+                                <div class="tabs-content__tab">
+                                    <div class="table product__table">
+                                        <div class="table__sorting d-flex align-center">
+                                            <svg class="icon"><use xlink:href="images/symbols.svg#sorting"></use></svg>
+                                            <a href="#" class="table__sorting-item table__sorting-item--active d-flex align-center">
+                                                По названию
+                                                <svg class="icon"><use xlink:href="images/symbols.svg#arrowTop"></use></svg>
+                                            </a>
+                                            <a href="#" class="table__sorting-item d-flex align-center">
+                                                По цене
+                                                <svg class="icon"><use xlink:href="images/symbols.svg#arrowBottom"></use></svg>
+                                            </a>
                                         </div>
-                                        <div class="category__item-name">
-                                            Плиты перекрытий железобетонные многопустотные
+                                        <div class="table__inner">
+                                            <div class="table__thead d-flex justify-space-between">
+                                                <div class="table__thead-item d-flex align-center">
+                                                    <b>Марка</b>
+                                                </div>
+                                                <div class="table__thead-item d-flex align-center">
+                                                    <b>Размер, м.</b>
+                                                </div>
+                                                <div class="table__thead-item d-flex align-center">
+                                                    <b>Объем, м3.</b>
+                                                </div>
+                                                <div class="table__thead-item d-flex align-center">
+                                                    <b>Вес изделия, т.</b>
+                                                </div>
+                                                <div class="table__thead-item d-flex align-center">
+                                                    <b>Класс бетона</b>
+                                                </div>
+                                                <div class="table__thead-item d-flex align-center">
+                                                    <b>Цена, руб./шт.</b>
+                                                </div>
+                                                <div class="table__thead-item d-flex align-center"></div>
+                                            </div>
+                                            <div class="table__body d-flex flex-column">
+                                                <div class="table__body-element d-flex justify-space-between">
+                                                    <input type="hidden" value="0">
+                                                    <div class="table__body-item">
+                                                        С30.30-3,1
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        3000 х 300 х 300
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        0,28
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        0,70
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        В15
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        <b class="table__price">от 4 999 ₽</b>
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        <a href="#" class="btn table__add-btn is-ripples has-ripple" data-color="#6080B0" data-opacity="0.3" data-duration="0.3" tabindex="0">Добавить в заказ</a>
+                                                        <div class="table__values d-flex align-center justify-space-between" style="display: none;">
+                                                            <a href="#" class="table__values--plus">+</a>
+                                                            <b>1</b>
+                                                            <a href="#" class="table__values--minus">-</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table__body-element d-flex justify-space-between">
+                                                    <input type="hidden" value="0">
+                                                    <div class="table__body-item">
+                                                        С30.30-3,1
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        3000 х 300 х 300
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        0,28
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        0,70
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        В15
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        <b class="table__price">от 4 999 ₽</b>
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        <a href="#" class="btn table__add-btn is-ripples has-ripple" data-color="#6080B0" data-opacity="0.3" data-duration="0.3" tabindex="0">Добавить в заказ</a>
+                                                        <div class="table__values d-flex align-center justify-space-between" style="display: none;">
+                                                            <a href="#" class="table__values--plus">+</a>
+                                                            <b>1</b>
+                                                            <a href="#" class="table__values--minus">-</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table__body-element d-flex justify-space-between">
+                                                    <input type="hidden" value="0">
+                                                    <div class="table__body-item">
+                                                        С30.30-3,1
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        3000 х 300 х 300
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        0,28
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        0,70
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        В15
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        <b class="table__price">от 4 999 ₽</b>
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        <a href="#" class="btn table__add-btn is-ripples has-ripple" data-color="#6080B0" data-opacity="0.3" data-duration="0.3" tabindex="0">Добавить в заказ</a>
+                                                        <div class="table__values d-flex align-center justify-space-between" style="display: none;">
+                                                            <a href="#" class="table__values--plus">+</a>
+                                                            <b>1</b>
+                                                            <a href="#" class="table__values--minus">-</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table__body-element d-flex justify-space-between">
+                                                    <input type="hidden" value="0">
+                                                    <div class="table__body-item">
+                                                        С30.30-3,1
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        3000 х 300 х 300
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        0,28
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        0,70
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        В15
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        <b class="table__price">от 4 999 ₽</b>
+                                                    </div>
+                                                    <div class="table__body-item">
+                                                        <a href="#" class="btn table__add-btn is-ripples has-ripple" data-color="#6080B0" data-opacity="0.3" data-duration="0.3" tabindex="0">Добавить в заказ</a>
+                                                        <div class="table__values d-flex align-center justify-space-between" style="display: none;">
+                                                            <a href="#" class="table__values--plus">+</a>
+                                                            <b>1</b>
+                                                            <a href="#" class="table__values--minus">-</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/2.png">
+                                    </div>
+                                </div>
+                                <div class="tabs-content__tab">
+                                    <div class="product__info-block d-flex justify-space-between">
+                                        <div class="product__info-block-item product__info-block-item--width">
+                                            <h5>Паспорт качества</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt explicabo facere itaque quisquam neque, aliquid corrupti? Hic officia placeat reiciendis doloribus enim. Tenetur, asperiores laboriosam facere sint, voluptate quaerat ratione modi autem, sed excepturi accusantium eligendi obcaecati officia neque unde?</p>
                                         </div>
-                                        <div class="category__item-name">
-                                            Перемычки железобетонные
+                                        <div class="product__info-block-item product__info-block-item--width">
+                                            <h5>Запросить дубликат паспорта качества</h5>
+                                            <form class="product__passport question d-flex align-stretch">
+                                                <div class="question__right-item d-flex flex-column justify-space-between">
+                                                    <div class="d-flex flex-column">
+                                                        <input type="text" placeholder="Ваше имя*">
+                                                        <input type="text" name="phone" placeholder="Телефон*">
+                                                        <input type="text" name="email" placeholder="E-mail*">
+                                                    </div>
+                                                    <p>Отправляя заявку, вы соглашаетесь с <a href="#">правилами обработки персональных данных и политикой конфиденциальности.</a></p>
+                                                </div>
+                                                <div class="question__right-item">
+                                                    <textarea placeholder="Ваш вопрос"></textarea>
+                                                    <button class="btn is-ripples" data-color="#02A0E4" data-opacity="0.3" data-duration="0.3">Отправить</button>
+                                                </div>
+                                            </form>
                                         </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/3.png">
+                                    </div>
+                                </div>
+                                <div class="tabs-content__tab">
+                                    <div class="product__info-block d-flex flex-column">
+                                        <div class="product__info-block-item product__info-block-item--width">
+                                            <h5>Паспорт качества</h5>
+                                            <p>Оплата производится двумя способами:</p>
+                                            <div class="product__methods-pay d-flex justify-space-between">
+                                                
+                                            </div>
                                         </div>
-                                        <div class="category__item-name">
-                                            Лотки
-                                        </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/4.png">
-                                        </div>
-                                        <div class="category__item-name">
-                                            Плиты канальные
-                                        </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/5.png">
-                                        </div>
-                                        <div class="category__item-name">
-                                            Детали забора
-                                        </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/6.png">
-                                        </div>
-                                        <div class="category__item-name">
-                                            Камни бетонные и железобетонные бортовые
-                                        </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/7.png">
-                                        </div>
-                                        <div class="category__item-name">
-                                            Изделия железобетонные для круглых колодцев водопровода и канализации
-                                        </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/8.png">
-                                        </div>
-                                        <div class="category__item-name">
-                                            Сваи
-                                        </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/9.png">
-                                        </div>
-                                        <div class="category__item-name">
-                                            Фундаментные блоки
-                                        </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/10.png">
-                                        </div>
-                                        <div class="category__item-name">
-                                            Плита камер
-                                        </div>
-                                    </a>
-                                    <a href="/product.html" class="category__item">
-                                        <div class="category__item-media">
-                                            <img src="images/category/11.png">
-                                        </div>
-                                        <div class="category__item-name">
-                                            Приставки для линий электропередач
-                                        </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -451,6 +596,25 @@
     <script src="js/ripple.js"></script>
     <script src="js/countup.js"></script>
     <script>
+        $('.product__media-slider-top').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            adaptiveHeight: true,
+            speed: 300,
+            //autoplay: true,
+            autoPlaySpeed: 5000,
+            asNavFor: '.product__media-slider-bottom'
+        });
+        $('.product__media-slider-bottom').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            speed: 300,
+            focusOnSelect: true,
+            asNavFor: '.product__media-slider-top',
+            centerMode: true,
+        });
         ymaps.ready(function () {
             // Создание экземпляра карты и его привязка к созданному контейнеру.
             var myMap = new ymaps.Map('map', {

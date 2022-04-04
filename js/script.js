@@ -194,4 +194,45 @@ $(document).ready(function() {
             $('#searchBtn').find('span').html('Поиск');
         }
     });
+
+    var n = 1;
+    $('.table__body-element .table__add-btn').click(function(e) {
+        e.preventDefault();
+        $(this).hide();
+        $(this).parent().find('.table__values').show();
+        $(this).closest('.table__body-element').find('input').val(1);
+    });
+    $('.table__body-element .table__values--plus').click(function(e) {
+        e.preventDefault();
+        if (n < 100) {
+            n++
+        }
+        $(this).closest('.table__body-element').find('input').val(n);
+        $(this).closest('.table__body-element').find('.table__values b').html(n);
+    });
+    $('.table__body-element .table__values--minus').click(function(e) {
+        e.preventDefault();
+        n--
+        if (n < 1) {
+            n = 1;
+            $(this).closest('.table__body-element').find('input').val(0);
+            $(this).closest('.table__body-element').find('.table__values').hide();
+            $(this).closest('.table__body-element').find('.table__add-btn').show();
+        }
+        $(this).closest('.table__body-element').find('input').val(n);
+        $(this).closest('.table__body-element').find('.table__values b').html(n);
+    });
+
+    $(".tabs-content .tabs-content__tab").not(":first").hide();
+    $(".tabs .tabs__tab").click(function () {
+        if ($(this).hasClass('tabs__tab--active')) {
+
+        } else {
+            $(".tabs-content .tabs-content__tab").hide().eq($(this).index()).fadeIn(300);
+        }
+        $('.tabs .tabs__tab.tabs__tab--active').removeClass('tabs__tab--active');
+        $(this).addClass('tabs__tab--active');
+        return false;
+    });
+
 });

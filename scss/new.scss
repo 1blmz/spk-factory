@@ -1,7 +1,39 @@
 $blue: #02A0E4;
 
 @import 'elements/_breadcrumb';
+@import 'elements/_table';
+
 @import 'pages/_category';
+@import 'pages/_product';
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
 
 .side-container {
     position: relative;
@@ -63,6 +95,37 @@ $blue: #02A0E4;
         display: none;
         &:hover {
             color: #000;
+        }
+    }
+}
+
+.tabs {
+    position: relative;
+    width: 100%;
+    li {
+        position: relative;
+        width: 100%;
+        a {
+            display: flex;
+            height: 59px;
+            border-radius: 4px;
+            width: 100%;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            background: #F4F4F4;
+        }
+        &:not(.tabs__tab--active):hover {
+            a {
+                color: $blue;
+            }
+        }
+    }
+    &__tab--active {
+        a {
+            background: $blue!important;
+            color: #fff;
         }
     }
 }

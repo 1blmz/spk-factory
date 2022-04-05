@@ -1,0 +1,287 @@
+.request {
+    position: relative;
+    &__list {
+        position: relative;
+    }
+    &__list-item {
+        width: 100%;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__list-item-category {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    &__table-delete {
+        color: #717171;
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 20px;
+        }
+    }
+    &__item-delete-btn {
+        width: 62px;
+        height: 62px;
+        border-radius: 4px;
+        background: $blue;
+        color: #fff;
+        &:hover {
+            background: $hoverBlue;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .table__body-element, .table__thead {
+        padding-right: 0;
+    }
+    &__list-item--background {
+        padding: 22px 32px;
+        border-radius: 4px;
+        background: #F4F4F4;
+    }
+    &__order {
+        position: relative;
+        width: 100%;
+        padding-top: 10px;
+    }
+    &__list-item {
+        h5 {
+            margin-bottom: 10px;
+        }
+    }
+    &__order-item {
+        width: 48%;
+        position: relative;
+        p {
+            margin-bottom: 15px;
+        }
+        &:nth-child(1) {
+            &:before {
+                content: '';
+                position: absolute;
+                right: -20px;
+                top: 50%;
+                width: 1px; 
+                transform: translateY(-50%);
+                height: 80%;
+                background: rgba(#707070, 0.09);
+            }
+        }
+    }
+    &__order-input {
+        position: relative;
+        width: 100%;
+        margin-bottom: 12px;
+        input {
+            width: 100%;
+        }
+        button {
+            border: solid 1px $blue;
+            width: 100%;
+            &:hover {
+                color: $blue;
+                background: transparent;
+            }
+        }
+        textarea {
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 85px;
+            max-height: 150px;
+            padding: 13px;
+        }
+        b {
+            font-size: 14px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .checkboxes {
+        &__item {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__order-input--checkbox {
+        margin-bottom: 20px;
+    }
+    &__file-upload {
+        width: 100%;
+        background: transparent;
+        border: solid 1px $blue;
+        color: $blue;
+        &:hover {
+            background: $blue;
+            color: #fff;
+        }
+    }
+    &__send {
+        position: relative;
+        width: 100%;
+    }
+    &__send-inner {
+        padding: 0px 90px;
+        height: 260px;
+        background: $blue;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            font-size: 42px;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: #fff;
+            line-height: 51px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            color: #fff;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            right: -3000px;
+            top: 0;
+            width: 3000px;
+            background: $blue;
+            height: 100%;
+        }
+    }
+    &__close {
+        position: relative;
+        color: #fff;
+        margin-left: 80px;
+        .icon {
+            width: 42px;
+            height: 42px;
+        }
+    }
+    &__order-input--checkbox, &__request__order-input--select {
+        height: 27px;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .request {
+        &__order-input--checkbox {
+            height: 27px;
+            flex-direction: column;
+            padding-top: 10px;
+            height: auto;
+            b {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 925px) {
+    .request {
+        &__order {
+            flex-wrap: wrap;
+        }
+        &__order-item {
+            width: 100%;
+            margin-bottom: 20px;
+            &:nth-last-child(1) {
+                .checkboxes__item {
+                    margin: 12px 0px 23px 0px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .request__send-inner:before {
+        content: none!important;
+    }
+    .request__send-inner {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .request {
+        &__table {
+            .table__inner {
+                min-width: 860px;
+            }
+            .table__scroll {
+                overflow: auto;
+            }
+        }
+        &__send-inner {
+            padding: 30px 40px;
+            h1 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .icon {
+                width: 32px;
+                height: 32px;
+            }
+            .request__close {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .request {
+        .request__order-input {
+            flex-wrap: wrap;
+        }
+        .checkboxes__item label {
+            height: auto;
+        }
+        .request__send-inner {
+            flex-wrap: wrap;
+        }
+        .request__send-inner .request__close {
+            padding: 20px 0px;
+        }
+        .checkboxes {
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .checkboxes__item {
+                margin-bottom: 12px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .request__order-input--checkbox {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .checkboxes--two label {
+            padding-left: 25px;
+        }
+        &__order-item {
+            .request__order-input {
+                &:nth-last-child(2) {
+                    label {
+                        width: calc(100% - 30px);
+                    }
+                }
+            }
+        }
+    }
+}

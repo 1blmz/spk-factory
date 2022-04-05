@@ -1,10 +1,13 @@
 $blue: #02A0E4;
+$hoverBlue: #007eb5;
 
 @import 'elements/_breadcrumb';
 @import 'elements/_table';
+@import 'elements/_checkboxes';
 
 @import 'pages/_category';
 @import 'pages/_product';
+@import 'pages/_request';
 
 h1 {
     font-size: 44px;

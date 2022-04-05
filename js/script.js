@@ -195,32 +195,33 @@ $(document).ready(function() {
         }
     });
 
-    var n = 1;
     $('.table__body-element .table__add-btn').click(function(e) {
         e.preventDefault();
         $(this).hide();
         $(this).parent().find('.table__values').show();
-        $(this).closest('.table__body-element').find('input').val(1);
     });
+
     $('.table__body-element .table__values--plus').click(function(e) {
         e.preventDefault();
-        if (n < 100) {
-            n++
+        var n = $(this).closest('.table__body-element').find('input');
+        if (n.val() < 100) {
+            n.val(parseInt(n.val()) + 1);
+            $(this).closest('.table__body-element').find('.table__values b').html(n.val());
         }
-        $(this).closest('.table__body-element').find('input').val(n);
-        $(this).closest('.table__body-element').find('.table__values b').html(n);
     });
     $('.table__body-element .table__values--minus').click(function(e) {
         e.preventDefault();
-        n--
-        if (n < 1) {
-            n = 1;
-            $(this).closest('.table__body-element').find('input').val(0);
-            $(this).closest('.table__body-element').find('.table__values').hide();
-            $(this).closest('.table__body-element').find('.table__add-btn').show();
+        var n = $(this).closest('.table__body-element').find('input');
+        n.val(parseInt(n.val()) - 1);
+        $(this).closest('.table__body-element').find('.table__values b').html(n.val());
+        if (n.val() < 1) {
+            n.val(1);
+            $(this).closest('.table__body-element').find('.table__values b').html(n.val());
+            if ($(this).closest('.table__body-element').hasClass('table__body-element--more')) {
+                $(this).closest('.table__body-element').find('.table__values').hide();
+                $(this).closest('.table__body-element').find('.table__add-btn').show();
+            }
         }
-        $(this).closest('.table__body-element').find('input').val(n);
-        $(this).closest('.table__body-element').find('.table__values b').html(n);
     });
 
     $(".tabs-content .tabs-content__tab").not(":first").hide();

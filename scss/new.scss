@@ -13,6 +13,7 @@ $hoverBlue: #007eb5;
 @import 'pages/_news';
 @import 'pages/_typical';
 @import 'pages/_activity';
+@import 'pages/_objects';
 
 h1 {
     font-size: 44px;
@@ -105,6 +106,78 @@ p {
             color: #000;
         }
     }
+    &__accordeon {
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #F4F4F4;
+        transition: 0.2s ease-in-out;
+    }
+    &__accordeon-item {
+        transition: 0.2s ease-in-out;
+        position: relative;
+        max-height: 58px;
+        margin-bottom: 1px;
+        overflow: hidden;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__accordeon-item--opened {
+        max-height: fit-content;
+    }
+    &__accordeon-heading {
+        height: 58px;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        background: $blue;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            background: $hoverBlue;
+        }
+    }
+    &__accordeon-body {
+        position: relative;
+        padding: 8px 0px;
+        li {
+            &:not(.side-container__accordeon-link--active):hover {
+                a {
+                    color: $blue;
+                }
+            }
+            a {
+                display: inline-block;
+                width: 100%;
+                padding: 12px 20px;
+                font-size: 16px;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 4px;
+                    height: 25px;
+                    background: $blue;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    &__accordeon-link--active {
+        a {
+            font-weight: bold;
+            &::before {
+                opacity: 1!important;
+            }
+        }
+    }
 }
 
 .tabs {
@@ -147,6 +220,12 @@ p {
         &__right {
             width: 100%;
             padding-left: 0;
+        }
+        &__accordeon {
+            max-height: 200px;
+        }
+        &__link-more {
+            display: flex;
         }
     }
 }

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/mmenu.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/ripple.css">
+    <link rel="stylesheet" href="fonts/Century Gothic/stylesheet.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <title>СтройПанельКомплект | Акционерное общество</title>
+</head>
+<body>
+    <div class="layout">
+        <nav id="menu">
+            <a href="#" class="mm-menu-logotype d-flex align-center justify-center">
+                <img src="/images/logotype.svg">
+            </a>
+            <ul id="panel-menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/catalog.html">Продукция</a>
+                    <ul>
+                        <li><a href="/category.html">Железобетонные изделия</a></li>
+                        <li><a href="/category.html">Пенополистирол</a></li>
+                        <li><a href="/category.html">Арматурные изделия</a></li>
+                        <li><a href="/category.html">Металлоизделия</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">Каталог проектов</a></li>
+                <li><a href="/">Наши объекты</a></li>
+                <li><a href="/">Клиентам</a></li>
+                <li><a href="/">Тендеры</a></li>
+                <li><a href="/">Карьера</a></li>
+                <li><a href="/">О заводе</a></li>
+                <li><a href="/">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header header--white d-flex flex-column">
+            <div class="header__top">
+                <div class="wrapper d-flex align-center justify-space-between">
+                    <div class="header__top-text"><b>Официальный сайт завода АО «СтройПанельКомплект»</b></div>
+                    <div class="header__top-right d-flex align-center">
+                        <a href="#" class="header__map-land d-flex align-center">
+                            <svg class="icon"><use xlink:href="images/symbols.svg#mapLand"></use></svg>
+                            <span>Предложить земельный участок</span>
+                        </a>
+                        <a href="#" class="header__top-search header__map-land d-flex align-center" id="searchBtn">
+                            <svg class="icon"><use xlink:href="images/symbols.svg#search"></use></svg>
+                            <span>Поиск</span>
+                        </a>
+                        <!-- <div class="header__top-search d-flex align-center">
+                            <svg class="icon"><use xlink:href="images/symbols.svg#search"></use></svg>
+                            <input type="text" placeholder="Поиск">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header__center">
+                <div class="wrapper d-flex align-start justify-space-between">
+                    <a href="/" class="header__logotype">
+                        <img src="images/logotype.svg">
+                    </a>
+                    <div class="header__search d-flex align-center">
+                        <input type="text" placeholder="Поиск">
+                        <button class="btn" type="submit">
+                            <svg class="icon"><use xlink:href="images/symbols.svg#search"></use></svg>
+                        </button>
+                    </div>
+                    <div class="header__info d-flex align-center">
+                        <svg class="icon"><use xlink:href="images/symbols.svg#mapMaker"></use></svg>
+                        <b>Пермь, ул. Героев Хасана 45А</b>
+                    </div>
+                    <div class="header__info d-flex align-center">
+                        <svg class="icon"><use xlink:href="images/symbols.svg#mail"></use></svg>
+                        <b>spk@spk.perm.ru</b>
+                    </div>
+                    <div class="header__info d-flex align-end flex-column">
+                        <div class="d-flex align-center">
+                            <svg class="icon"><use xlink:href="images/symbols.svg#phone"></use></svg>
+                            <b>+7 (342) 264-25-01</b>
+                        </div>
+                        <a href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="wrapper d-flex align-center justify-space-between">
+                    <a href="/"><img class="header__bottom-logo-fixed" src="images/logotype--small.svg"></a>
+                    <div class="header__search d-flex align-center">
+                        <input type="text" placeholder="Поиск">
+                        <button class="btn" type="submit">
+                            <svg class="icon"><use xlink:href="images/symbols.svg#search"></use></svg>
+                        </button>
+                    </div>
+                    <a href="#menu" onclick="return false;" class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <nav class="header__links d-flex align-center justify-space-between">
+                        <li>
+                            <a href="#">Продукция</a>
+                            <ul class="header__dropdown">
+                                <li><a href="#">Железобетонные изделия</a></li>
+                                <li><a href="#">Пенополистирол</a></li>
+                                <li><a href="#">Арматурные изделия</a></li>
+                                <li><a href="#">Металлоизделия</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Каталог проектов</a></li>
+                        <li><a href="#">Наши объекты</a></li>
+                        <li><a href="#">Клиентам</a></li>
+                        <li><a href="#">Тендеры</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">О заводе</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="sections">
+            <div class="sections__section">
+                <div class="wrapper">
+                    <ul class="breadcrumb d-flex align-center">
+                        <li><a href="#">О заводе</a></li>
+                        <li><a href="#">Наша деятельность</a></li>
+                        <li><a href="#">Строительная деятельность</a></li>
+                    </ul>
+                    <div class="section__title d-flex flex-column">
+                        <div class="section__title-top d-flex align-center"><h1>Строительная деятельность</h1></div>
+                    </div>
+                    <div class="activity typical">
+                        <div class="typical__img">
+                            <img src="images/activity/4.png"> 
+                        </div>
+                        <p>&nbsp;</p>
+                        <p>Комплексное развитие территорий – приоритетное направления деятельности «СтройПанельКомплект». Масштабная многоэтапная застройка преображает архитектурный облик районов Перми и Пермского края. Ежегодно СПК вводит в эксплуатацию до 70 000 кв.м. жилья и заселяет в новые дома несколько тысяч новоселов.</p>
+                        <p>&nbsp;</p>
+                        <p>СПК возводит жилые дома и комплексы не только в Перми, но и в малых городах Пермского края. Новостройки СПК украшают такие города и поселения как Кунгур, Кудымкар, Березники, Лысьва, Лобаново.</p>
+                        <p>&nbsp;</p>
+                        <ul>
+                            <li>АО «СтройПанельКомплект» возводит объекты по нескольким технологиям:</li>
+                            <li>Технология крупнопанельного домостроения – «97 серия»</li>
+                            <li>Технология каркасно-монолитного строения – система «Аркос»</li>
+                            <li>Технология строительства из готовых кирпичных стен – WanderBlok</li>
+                            <li>Модернизированная «97 серия» панельного домостроения</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p>Мы реализуем в своих проектах не просто качественные дома, но полноценную среду проживания! В кварталах предусмотрены помещения под коммерческую и бытовую инфраструктуру, в том числе отдельно стоящие торговые центры. Здесь работают магазины, аптеки, салоны красоты. В шаговой доступности расположены детские сады и школы. Большие участки застройки позволяют проектировать концепцию «двор без машин», что создает защищенное и комфортное внутридворовое пространство. Собственное производство и укомплектованное строительное подразделение позволяют возводить большие объемы строительства точно в срок или с опережением графиков. Мы работаем над развитием наших проектов и привносим в них лучшие тенденции жилищного строительства.</p>
+                        <p>&nbsp;</p>
+                        <p>В домах СПК выросло не одно поколение пермяков, которые и сегодня выбирают СПК за качество, надежность и разнообразие проектов. Мы неизменно держит курс на доступное, комфортное и качественное жилье для Пермского края.</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sections__section sections__section--gray" id="question">
+                <div class="wrapper">
+                    <div class="question d-flex align-stretch justify-space-between">
+                        <div class="question__left d-flex flex-column">
+                            <div class="section__title">
+                                <div class="section__title-top d-flex align-center">
+                                    <h1>Остались вопросы?</h1>
+                                </div>
+                            </div>
+                            <p>Получите профессиональную консультацию специалистов <b>АО «СтройПанельКомплект»</b></p>
+                            <p>&nbsp;</p>
+                            <p>Время работы отдела продаж 9:00 - 18:00 МСК</p>
+                            <p>&nbsp;</p>
+                            <p>Отправляя заявку, вы соглашаетесь с <a href="#">правилами обработки персональных данных и политикой конфиденциальности.</a></p>
+                        </div>
+                        <form class="question__right d-flex align-stretch justify-space-between">
+                            <div class="question__right-item">
+                                <textarea placeholder="Ваш вопрос"></textarea>
+                            </div>
+                            <div class="question__right-item d-flex flex-column justify-space-between">
+                                <input type="text" placeholder="Ваше имя*">
+                                <input type="text" name="phone" placeholder="Телефон*">
+                                <input type="text" name="email" placeholder="E-mail*">
+                                <button class="btn is-ripples" data-color="#02A0E4" data-opacity="0.3" data-duration="0.3" >Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="sections__section sections__section--no-padding" id="contacts">
+                <div class="contacts">
+                    <div class="wrapper">
+                        <div class="contacts__inner d-flex flex-column">
+                            <div class="section__title section__title--white d-flex flex-column">
+                                <div class="section__title-top d-flex align-center">
+                                    <h1>Контакты</h1>
+                                    <div class="section__title-top-divider"></div>
+                                    <div class="section__title-count"></div>
+                                </div>
+                            </div>
+                            <div class="contacts__item d-flex flex-column">
+                                <label>Адрес:</label>
+                                <span>Пермь, ул. Героев Хасана 45А</span>
+                            </div>
+                            <div class="contacts__item d-flex flex-column">
+                                <label>Почта:</label>
+                                <span>spk@spk.perm.ru</span>
+                            </div>
+                            <div class="contacts__item d-flex flex-column">
+                                <label>Телефон:</label>
+                                <span>+7 342 264 25 01</span>
+                            </div>
+                            <div class="contacts__item d-flex flex-column">
+                                <label>Время работы:</label>
+                                <span>Пн-пт с 09:00 до 18:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="sections__section">
+                <div class="wrapper">
+                    <div class="footer d-flex justify-space-between">
+                        <div class="footer__item d-flex flex-column">
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__item-title footer__link-b"><b>Каталог товаров</b></a>
+                                <ul>
+                                    <li><a href="#">ЖБИ</a></li>
+                                    <li><a href="#">Металлоизделия</a></li>
+                                    <li><a href="#">Арматурные изделия</a></li>
+                                    <li><a href="#">Пенополистирол</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__item-title footer__link-b"><b>Деятельность</b></a>
+                                <ul>
+                                    <li><a href="#">Производственная деятельность</a></li>
+                                    <li><a href="#">Строительная деятельность</a></li>
+                                    <li><a href="#">Социальная деятельность</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__item d-flex flex-column">
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__item-title footer__link-b"><b>Клиентам</b></a>
+                                <ul>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="#">Паспорта качества</a></li>
+                                    <li><a href="#">Лаборатория</a></li>
+                                    <li><a href="#">Экскурсия</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__item-title footer__link-b"><b>Наши объекты</b></a>
+                                <ul>
+                                    <li><a href="#">Многоэтажные объекты</a></li>
+                                    <li><a href="#">Малоэтажные объекты</a></li>
+                                    <li><a href="#">Социальные объекты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__item d-flex flex-column">
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__item-title footer__link-b"><b>Архитектурные решения</b></a>
+                                <ul>
+                                    <li><a href="#">Коттеджное строительство</a></li>
+                                    <li><a href="#">Крупнопанельное строительство</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__item-title footer__link-b"><b>Закупки</b></a>
+                                <ul>
+                                    <li><a href="#">Текущие закупки</a></li>
+                                    <li><a href="#">Аккредитация</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__item-title footer__link-b"><b>Карьера на заводе</b></a>
+                                <ul>
+                                    <li><a href="#">Вакансии</a></li>
+                                    <li><a href="#">Стажировка и практика</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__item d-flex flex-column">
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__link-b"><b>Предложить земельный участок</b></a>
+                            </div>
+                            <div class="footer__item-inner d-flex flex-column">
+                                <div class="footer__item-title"><b>О заводе</b></div>
+                                <ul>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="#">Награды</a></li>
+                                    <li><a href="#">О заводе</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item-inner d-flex flex-column">
+                                <a href="#" class="footer__item-title footer__link-b"><b>Контакты</b></a>
+                                <ul>
+                                    <li><a href="#">Обработка персональных данных</a></li>
+                                    <li><a href="#">Карта сайта</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__item d-flex flex-column">
+                            <img class="footer__logotype" src="images/logotype--small.svg">
+                            <ul class="footer__contacts d-flex flex-column">
+                                <li class="d-flex align-center">
+                                    <svg class="icon"><use xlink:href="images/symbols.svg#mapMaker"></use></svg>
+                                    <span>Пермь, ул. Героев Хасана 45А</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="icon"><use xlink:href="images/symbols.svg#mail"></use></svg>
+                                    <span>spk@spk.perm.ru</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="icon"><use xlink:href="images/symbols.svg#phone"></use></svg>
+                                    <span>+7 (342) 264-25-01</span>
+                                </li>
+                            </ul>
+                            <div class="footer__btns d-flex flex-column">
+                                <a href="#" class="btn btn--small is-ripples">Заказать звонок</a>
+                                <a href="#" class="btn btn--small is-ripples">Получить прайс</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sections__section sections__section--gray sections__section--no-padding">
+                <div class="wrapper">
+                    <div class="footer-bottom d-flex align-center justify-space-between">
+                        <span>АО «СтройПанельКомплект» © 2022</span>
+                        <div class="footer-bottom__socials d-flex align-center">
+                            <a href="#"><svg class="icon"><use xlink:href="images/symbols.svg#ok"></use></svg></a>
+                            <a href="#"><svg class="icon"><use xlink:href="images/symbols.svg#instagram"></use></svg></a>
+                            <a href="#"><svg class="icon"><use xlink:href="images/symbols.svg#youtube"></use></svg></a>
+                            <a href="#"><svg class="icon"><use xlink:href="images/symbols.svg#twitter"></use></svg></a>
+                            <a href="#"><svg class="icon"><use xlink:href="images/symbols.svg#whatsapp"></use></svg></a>
+                            <a href="#"><svg class="icon"><use xlink:href="images/symbols.svg#viber"></use></svg></a>
+                            <a href="#"><svg class="icon"><use xlink:href="images/symbols.svg#telegram"></use></svg></a>
+                            <a href="#"><svg class="icon"><use xlink:href="images/symbols.svg#vk"></use></svg></a>
+                        </div>
+                        <span><a href="https://praweb.ru/" target="_blank">СОЗДАНИЕ И ПРОДВИЖЕНИЕ САЙТОВ - PRAWEB.RU</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://yandex.st/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=8ff9a0c1-6605-475a-9a34-6aa2bf864d6d"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js"></script>
+    <script src="js/phoneMask.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script src="js/svgxuse.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ripple.js"></script>
+    <script src="js/countup.js"></script>
+    <script>
+        ymaps.ready(function () {
+            // Создание экземпляра карты и его привязка к созданному контейнеру.
+            var myMap = new ymaps.Map('map', {
+                    center: [57.983759, 56.262259],
+                    zoom: 17,
+                    behaviors: ['default', 'scrollZoom'],
+                    controls: []
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+    
+                // Создание макета балуна на основе Twitter Bootstrap.
+                MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div class="popover top">' +
+                        //'<a class="close" href="#">&times;</a>' +
+                        '<div class="arrow"></div>' +
+                        '<div class="popover-inner">' +
+                        '$[[options.contentLayout observeSize minWidth=235 maxWidth=235 maxHeight=350]]' +
+                        '</div>' +
+                        '</div>', {
+                        /**
+                        * Строит экземпляр макета на основе шаблона и добавляет его в родительский HTML-элемент.
+                        * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#build
+                        * @function
+                        * @name build
+                        */
+                        build: function () {
+                            this.constructor.superclass.build.call(this);
+    
+                            this._$element = $('.popover', this.getParentElement());
+    
+                            this.applyElementOffset();
+    
+                            this._$element.find('.close')
+                                .on('click', $.proxy(this.onCloseClick, this));
+                        },
+    
+                        /**
+                        * Удаляет содержимое макета из DOM.
+                        * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#clear
+                        * @function
+                        * @name clear
+                        */
+                        clear: function () {
+                            this._$element.find('.close')
+                                .off('click');
+    
+                            this.constructor.superclass.clear.call(this);
+                        },
+    
+                        /**
+                        * Метод будет вызван системой шаблонов АПИ при изменении размеров вложенного макета.
+                        * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+                        * @function
+                        * @name onSublayoutSizeChange
+                        */
+                        onSublayoutSizeChange: function () {
+                            MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+    
+                            if(!this._isElement(this._$element)) {
+                                return;
+                            }
+    
+                            this.applyElementOffset();
+    
+                            this.events.fire('shapechange');
+                        },
+    
+                        /**
+                        * Сдвигаем балун, чтобы "хвостик" указывал на точку привязки.
+                        * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+                        * @function
+                        * @name applyElementOffset
+                        */
+                        applyElementOffset: function () {
+                            this._$element.css({
+                                left: -(this._$element[0].offsetWidth / 2),
+                                top: -(this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight)
+                            });
+                        },
+    
+                        /**
+                        * Закрывает балун при клике на крестик, кидая событие "userclose" на макете.
+                        * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+                        * @function
+                        * @name onCloseClick
+                        */
+                        onCloseClick: function (e) {
+                            e.preventDefault();
+    
+                            this.events.fire('userclose');
+                        },
+    
+                        /**
+                        * Используется для автопозиционирования (balloonAutoPan).
+                        * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/ILayout.xml#getClientBounds
+                        * @function
+                        * @name getClientBounds
+                        * @returns {Number[][]} Координаты левого верхнего и правого нижнего углов шаблона относительно точки привязки.
+                        */
+                        getShape: function () {
+                            if(!this._isElement(this._$element)) {
+                                return MyBalloonLayout.superclass.getShape.call(this);
+                            }
+    
+                            var position = this._$element.position();
+    
+                            return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
+                                [position.left, position.top], [
+                                    position.left + this._$element[0].offsetWidth,
+                                    position.top + this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight
+                                ]
+                            ]));
+                        },
+    
+                        /**
+                        * Проверяем наличие элемента (в ИЕ и Опере его еще может не быть).
+                        * @function
+                        * @private
+                        * @name _isElement
+                        * @param {jQuery} [element] Элемент.
+                        * @returns {Boolean} Флаг наличия.
+                        */
+                        _isElement: function (element) {
+                            return element && element[0] && element.find('.arrow')[0];
+                        }
+                    }),
+    
+                // Создание вложенного макета содержимого балуна.
+                MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<img src="images/logotype--white.svg">'
+                ),
+            // Создание метки
+            myPlacemark = new ymaps.Placemark(
+            // Координаты метки
+                [57.983888, 56.264271] , {
+            // Свойства
+            // Текст метки
+                hintContent: 'СтройПанельКомплект | Нажмите, чтобы узнать подробную информацию',
+                balloonHeader: '<b>ул. Лифанова, <br> д. 2, офис 11</b>',
+                balloonContent: '<span>Вход со двора...</span>'
+                }, {
+                iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+                iconImageHref: '', // картинка иконки
+                iconImageSize: [32, 32], // размеры картинки
+                iconImageOffset: [-6, -10], // смещение картинки
+                balloonShadow: false,
+                balloonLayout: MyBalloonLayout,
+                balloonContentLayout: MyBalloonContentLayout,
+                balloonPanelMaxMapArea: 0,
+            // Не скрываем иконку при открытом балуне.
+                hideIconOnBalloonOpen: false,
+            // И дополнительно смещаем балун, для открытия над иконкой.
+                balloonOffset: [-166, -45],
+                });
+    
+            // Добавление метки на карту
+                myMap.behaviors.disable('scrollZoom');
+                myMap.geoObjects.add(myPlacemark);
+                myPlacemark.balloon.open();
+                myMap.events.add('click', function(){
+                    myMap.behaviors.enable('scrollZoom')
+                });
+        });
+    </script>
+</body>
+</html>

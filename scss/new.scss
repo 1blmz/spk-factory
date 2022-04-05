@@ -4,10 +4,15 @@ $hoverBlue: #007eb5;
 @import 'elements/_breadcrumb';
 @import 'elements/_table';
 @import 'elements/_checkboxes';
+@import 'elements/_pagination';
+@import 'elements/_feedback';
 
 @import 'pages/_category';
 @import 'pages/_product';
 @import 'pages/_request';
+@import 'pages/_news';
+@import 'pages/_typical';
+@import 'pages/_activity';
 
 h1 {
     font-size: 44px;

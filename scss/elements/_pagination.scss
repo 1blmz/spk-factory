@@ -1,0 +1,61 @@
+.pagination {
+    position: relative;
+    a {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        border: solid 1px $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $blue;
+    }
+    &__pages {
+        position: relative;
+        a {
+            margin-right: 6px;
+            font-size: 16px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:not(.pagination__item--active):not(.pagination__prev):not(.pagination__next):hover {
+                background: $blue;
+                color: #fff;
+            }
+        }
+    }
+    &__item--active, &__prev, &__next {
+        background: $blue;
+        color: #fff!important;
+    }
+    &__prev, &__next {
+        &:hover {
+            background: $hoverBlue;
+            border-color: $hoverBlue;
+        }
+    }
+    &__prev {
+        i {
+            width: 11px;
+            height: 11px;
+            border-right: solid 2px;
+            border-bottom: solid 2px;
+            transform: rotate(135deg);
+            position: relative;
+            left: 2px;
+            pointer-events: none;
+        }
+    }
+    &__next {
+        i {
+            width: 11px;
+            height: 11px;
+            border-right: solid 2px;
+            border-bottom: solid 2px;
+            transform: rotate(-45deg);
+            position: relative;
+            left: -3px;
+            pointer-events: none;
+        }
+    }
+}

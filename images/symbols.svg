@@ -81,5 +81,14 @@
                 <path id="Head" d="M13,4l4.876,4.876L13,13.751" transform="translate(-6.753 -3.999)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
             </g>
         </symbol>
+        <symbol id="logotype" viewBox="0 0 21.958 11.164">
+            <g id="Сгруппировать_264" data-name="Сгруппировать 264" transform="translate(-412.912 -1182.422)">
+                <path id="Контур_9800" data-name="Контур 9800" stroke="none" d="M-5056.39,19777.789h4.685l-4.685,3.721Zm11.071.586h0v9.92l-3.1-2.395v-5.174Zm-7.9,10.482h-3.169v-1.953l.983-.734,2.231,1.619Z" transform="translate(5480.135 -18595.311)" fill-rule="evenodd"/>
+                <path id="Контур_9801" data-name="Контур 9801" stroke="none" d="M-8913.5,19758a5.548,5.548,0,0,1,4.926,2.986h-4.949a2.569,2.569,0,0,0-2.546,2.568,2.571,2.571,0,0,0,2.569,2.57,2.543,2.543,0,0,0,1.5-.484h0l9.63-7.7,5.273.01-14.18,10.617a4.956,4.956,0,0,1-2.223.537,5.555,5.555,0,0,1-5.556-5.555A5.557,5.557,0,0,1-8913.5,19758Zm6.944,7.873h0l4.04,3.215h5.388l-6.842-5.189Z" transform="translate(9331.973 -18575.527)" fill-rule="evenodd"/>
+            </g>
+        </symbol>
+        <symbol id="cursor" viewBox="0 0 11.959 18.324">
+            <path id="cursor-icon" stroke="none" d="M1189.791,361.716l11.959,9.375-5.109.869,3.249,6.624-2.979,1.456-3.268-6.687-3.852,3.5Z" transform="translate(-1189.791 -361.716)"/>
+        </symbol>
     </defs>
 </svg>

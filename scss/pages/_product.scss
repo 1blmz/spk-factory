@@ -166,4 +166,187 @@
             min-height: 150px;
         }
     }
+    &__methods-pay, &__methods-item {
+        position: relative;
+    }
+    &__methods-pay {
+        margin-top: 30px;
+        width: 100%;
+    }
+    &__method-title {
+        position: relative;
+        font-size: 16px;
+        margin-bottom: 25px;
+        i {
+            width: 37px;
+            height: 37px;
+            border-radius: 50px;
+            background: #A0DEF6;
+            margin-right: 10px;
+            .icon {
+                width: 21px;
+                height: 11px;
+            }
+        }
+    }
+    &__methods-item {
+        width: 48%;
+        p {
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        ul {
+            position: relative; 
+            li {
+                font-size: 14px!important;
+                display: flex;
+                align-items: center;
+                color: $blue;
+                padding-left: 0!important;
+                &:before {
+                    content: none!important;
+                }
+                .icon {
+                    width: 14px;
+                    margin-right: 8px;
+                    height: 14px;
+                }
+            }
+        }
+    }
+    &__info-block-item {
+        ul {
+            position: relative;
+            li {
+                font-size: 16px;
+                padding-left: 26px;
+                line-height: 22px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 3px;
+                    top: 13px;
+                    width: 5px;
+                    height: 8px;
+                    border-right: solid 2px;
+                    border-bottom: solid 2px;
+                    transform: rotate(45deg);
+                    color: $blue;
+                }
+            }
+        }
+    }
+    &__info-block--delivery {
+        .product__info-block-item {
+            &:nth-child(1) {
+                width: 40%;
+            }
+            &:nth-child(2) {
+                width: 60%;
+            }
+        }
+    }
+    &__other-products {
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
+    }
+    &__other-products-slider {
+        position: relative;
+        display: flex;
+        width: 100%;
+        .category__item {
+            width: 272px;
+            margin: 0!important;
+        }
+        .slick-slide {
+            margin: 0 9px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .product__info-block--delivery {
+        flex-wrap: wrap;
+        .product__info-block-item {
+            width: 100%!important;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .product {
+        &__info {
+            flex-wrap: wrap;
+        }
+        &__media {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        &__info-inner {
+            width: 100%;
+            padding-left: 0;
+        }
+        &__table {
+            .table__scroll {
+                overflow: auto;
+            }
+            .table__inner {
+                min-width: 1150px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 725px) {
+    .product {
+        .tabs {
+            flex-wrap: wrap;
+            .tabs__tab {
+                width: calc(100% / 2 - 5px);
+                margin-bottom: 10px;
+            }
+        }
+        &__info-block {
+            flex-wrap: wrap;
+        }
+        &__info-block-item {
+            width: 100%!important;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__table-delivery {
+            .table__inner {
+                min-width: 760px;
+            }
+            .table__scroll {
+                overflow: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .product {
+        &__methods-pay {
+            flex-wrap: wrap;
+        }
+        &__methods-item {
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }

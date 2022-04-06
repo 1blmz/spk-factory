@@ -1992,6 +1992,155 @@
   }
 }
 
+.management {
+  position: relative;
+}
+
+.management__item {
+  width: calc(100% / 2 - 12.5px);
+  margin: 0 auto 33px 0;
+  padding: 32px 0px;
+  position: relative;
+}
+
+.management__item:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.management__item:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 46px);
+  height: 100%;
+  background: #F4F4F4;
+}
+
+.management__photo {
+  position: relative;
+  width: 166px;
+  height: 166px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.management__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.management__info {
+  width: calc(100% - 166px);
+  position: relative;
+  padding-left: 20px;
+}
+
+.management__username {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.management__profession {
+  position: relative;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.management__username-top {
+  font-size: 28px;
+}
+
+.management__contacts {
+  position: relative;
+}
+
+.management__contacts li {
+  margin-bottom: 15px;
+}
+
+.management__contacts li:last-child {
+  margin-bottom: 0;
+}
+
+.management__contacts a {
+  font-weight: bold;
+}
+
+.management__contacts .icon {
+  width: 18px;
+  height: 18px;
+  color: #B4B4B4;
+  margin-right: 8px;
+}
+
+.management__phone a {
+  position: relative;
+  font-size: 28px;
+}
+
+.management__phone a:hover {
+  color: #02A0E4;
+}
+
+.management__mail .icon {
+  width: 17px;
+  height: 13px;
+}
+
+.management__mail a {
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #02A0E4;
+}
+
+.management__mail a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 975px) {
+  .management__item {
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 33px !important;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .management__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px !important;
+  }
+  .management__item:before {
+    width: 100%;
+  }
+  .management__info {
+    position: relative;
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 15px;
+  }
+  .management__contacts li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 h1 {
   font-size: 44px;
 }

@@ -266,6 +266,53 @@
             margin: 0 9px;
         }
     }
+    &__project-info {
+        position: relative;
+        h5 {
+            margin-bottom: 30px;
+        }
+    }
+    &__project-info-list {
+        position: relative;
+        width: 100%;
+        li {
+            padding: 0!important;
+            font-size: 14px!important;
+            margin-bottom: 4px!important;
+            display: flex;
+            justify-content: space-between;
+            &::before {
+                content: none!important;
+            }
+        }
+        ul {
+            padding-left: 30px;
+        }
+    }
+    &__project-plan-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    &__project-plan-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.product--project {
+    .product__characteristics {
+        b {
+            width: 170px;
+        }
+    }
+    .tabs {
+        .tabs__tab {
+            margin-right: 8px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -348,5 +395,22 @@
                 margin-bottom: 0;
             }
         }
+    }
+    .product__project-info-list ul {
+        padding-left: 0;
+    }
+    .product--project {
+        .tabs {
+            flex-wrap: wrap;
+        }
+        .tabs__tab {
+            width: 100%!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .product__project-info-list li {
+        font-size: 11px!important;
     }
 }

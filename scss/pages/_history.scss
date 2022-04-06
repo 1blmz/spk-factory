@@ -1,0 +1,181 @@
+.history {
+    position: relative;
+    &__item {
+        margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+    }
+    &__item-2 {
+        width: calc(50% - 15px);
+    }
+    &__video-media {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+    &__time-slider {
+        position: relative;
+        margin-bottom: 60px;
+        cursor: pointer;
+        i {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #c2d2d9;
+            margin-bottom: 15px;
+            transition: 0.25s ease;
+            position: relative;
+            z-index: 1;
+        }
+        p {
+            font-size: 18px;
+            transition: 0.25s ease;
+            pointer-events: none;
+        }
+    }
+    &__time-item {
+        position: relative;
+        display: flex!important;
+    }
+    &__time-slider {
+        position: relative;
+        .slick-slide {
+            height: 80px;
+            display: flex!important;
+            align-items: center;
+            position: relative;
+            margin: 0;
+            &:nth-child(1) {
+                &:after, &:before {
+                    border-radius: 50px 0px 0px 50px;
+                }
+            }
+            &:last-child {
+                &:after, &::before {
+                    border-radius: 0px 50px 50px 0px;
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 100%;
+                background: #f3f3f3;
+                top: 20px;
+                left: 0;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 0%;
+                background: $blue;
+                top: 20px;
+                left: 0;
+            }
+            > div {
+                width: 100%;
+            }
+            &:not(.slick-current):hover {
+                i {
+                    background: $blue;
+                    box-shadow: 0px 0 0px 10px rgba($blue, 0.2);
+                }
+                color: $blue;
+            }
+        }
+        .slick-current {
+            &:after {
+                width: 100%;
+                z-index: 1;
+            }
+            i {
+                background: $blue;
+            }
+            p {
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+    }
+    &__time-live {
+        position: relative;
+    }
+    &__time-info {
+        position: relative;
+        width: 100%;
+    }
+    &__time-slider-info {
+        position: relative;
+        width: 100%;
+    }
+    &__time-slider-item {
+        position: relative;
+        width: 100%;
+        display: flex!important;
+        h1 {
+            margin-bottom: 32px;
+        }
+    }
+    &__time-slider-item-left {
+        width: 35%;
+    }
+    &__time-slider-item-right {
+        width: 55%;
+        display: flex;
+        justify-content: flex-end;
+        .btn {
+            width: 100%;
+            border: solid 1px $blue;
+            &:hover {
+                color: $blue;
+            }
+        }
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+    }
+    &__media {
+        position: relative;
+        width: 100%;
+        margin-bottom: 11px;
+    }
+    &__media-gallery {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .history {
+        &__item {
+            flex-wrap: wrap;
+        }
+        &__item-2 {
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__time-slider-item {
+            flex-wrap: wrap;
+        }
+        &__time-slider-item-left, &__time-slider-item-right {
+            width: 100%;
+        }
+        &__time-slider-item-left {
+            margin-bottom: 20px;
+        }
+        &__time-slider {
+            margin-bottom: 30px;
+        }
+    }
+}

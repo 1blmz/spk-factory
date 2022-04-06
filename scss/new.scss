@@ -6,6 +6,8 @@ $hoverBlue: #007eb5;
 @import 'elements/_checkboxes';
 @import 'elements/_pagination';
 @import 'elements/_feedback';
+@import 'elements/_select';
+@import 'elements/_video';
 
 @import 'pages/_category';
 @import 'pages/_product';
@@ -17,6 +19,9 @@ $hoverBlue: #007eb5;
 @import 'pages/_object';
 @import 'pages/_tenders';
 @import 'pages/_management';
+@import 'pages/_contacts';
+@import 'pages/_history';
+@import 'pages/_projects';
 
 h1 {
     font-size: 44px;
@@ -69,6 +74,7 @@ p {
         border-radius: 4px;
         overflow: hidden;
         border: solid 1px #000;
+        transition: 0.2s ease-in-out;
         li {
             &:not(.side-container__link--active) {
                 a {
@@ -224,6 +230,17 @@ p {
             color: #fff;
         }
     }
+    &.btn--file {
+        cursor: pointer;
+        transition: 0.25s ease-in-out;
+        width: 100%;
+        span {
+            pointer-events: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
 }
 
 @media only screen and (max-width: 895px) {
@@ -236,11 +253,20 @@ p {
             width: 100%;
             padding-left: 0;
         }
-        &__accordeon {
+        &__accordeon, &__links {
             max-height: 200px;
         }
         &__link-more {
             display: flex;
         }
     }
+}
+
+input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }

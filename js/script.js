@@ -248,11 +248,11 @@ $(document).ready(function() {
 
     $('.side-container__link-more').click(function(e) {
         e.preventDefault();
-        if ($('.side-container__accordeon').hasClass('side-container__accordeon--full')) {
-            $('.side-container__accordeon').removeClass('side-container__accordeon--full').css({'max-height': '200px'});
+        if ($('.side-container__accordeon, .side-container__links').hasClass('side-container__accordeon--full')) {
+            $('.side-container__accordeon, .side-container__links').removeClass('side-container__accordeon--full').css({'max-height': '200px'});
             $(this).html('Показать больше');
         } else {
-            $('.side-container__accordeon').addClass('side-container__accordeon--full').css({'max-height': $('.side-container__accordeon')[0].scrollHeight});
+            $('.side-container__accordeon, .side-container__links').addClass('side-container__accordeon--full').css({'max-height': $('.side-container__accordeon, .side-container__links')[0].scrollHeight});
             $(this).html('Скрыть');
         }
     });
@@ -260,8 +260,48 @@ $(document).ready(function() {
     $(window).resize(function() {
         if (window.innerWidth > 895) {
             $('.side-container__link-more').html('Показать больше');
-            $('.side-container__accordeon').removeClass('side-container__accordeon--full').removeAttr('style');
+            $('.side-container__accordeon, .side-container__links').removeClass('side-container__accordeon--full').removeAttr('style');
         }
+    });
+    
+    $('.select .select__input').click(function(e) {
+        e.preventDefault();
+        if ($(this).parent().hasClass('select--opened')) {
+            $(this).parent().removeClass('select--opened');
+            $(this).parent().find('.select__dropdown').hide();
+        } else {
+            $('.select.select--opened').removeClass('select--opened').find('.select__dropdown').hide();
+            $(this).parent().addClass('select--opened');
+            $(this).parent().find('.select__dropdown').show();
+        }
+    });
+
+    $(document).click(function (e) {
+        if (!$(e.target).closest('.select').length) {
+            $('.select').removeClass('select--opened');
+            $('.select__dropdown').hide();
+        }
+    });
+
+    $('.select .select__dropdown a').click(function(e) {
+        e.preventDefault();
+        var inp = $(this).parent().parent().parent().find('input'),
+            value = $(this).find('span').html();
+        inp.val(value);
+        $(this).parent().parent().parent().removeClass('select--opened');
+        $(this).parent().parent().parent().find('.select__dropdown').hide();
+    });
+
+    $('.input-file').each(function() {
+        var $input = $(this),
+            $label = $input.next('.js-labelFile'),
+            labelVal = $label.html();
+
+        $input.on('change', function(element) {
+            var fileName = '';
+            if (element.target.value) fileName = element.target.value.split('\\').pop();
+            fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
+        });
     });
 
 });

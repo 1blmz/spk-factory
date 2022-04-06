@@ -1,5 +1,9 @@
 .objects {
     position: relative;
+    h1 {
+        margin-bottom: 33px;
+        text-transform: uppercase;
+    }
     &__item {
         position: relative;
         margin-bottom: 60px;

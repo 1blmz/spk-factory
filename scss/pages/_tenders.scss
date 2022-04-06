@@ -1,0 +1,49 @@
+.tenders {
+    position: relative;
+    &__item {
+        position: relative;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .table__thead {
+        .table__thead-item {
+            &:first-child {
+                width: 20%;
+            }
+            &:last-child {
+                .icon {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    .table__body-element {
+        .table__body-item {
+            padding: 15px 0px;
+            &:first-child {
+                width: 20%;
+            }
+            &:last-child {
+                padding: 0;
+                .icon {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .tenders {
+        .table__inner {
+            min-width: 1150px;
+        }
+        .table__scroll {
+            overflow: auto;
+        }
+    }
+}

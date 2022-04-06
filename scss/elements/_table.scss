@@ -46,16 +46,16 @@
     }
     &__body-element {
         position: relative;
-        height: 62px;
+        min-height: 62px;
         background: #fff;
         border-top: solid 1px rgba(#707070, 0.07);
         box-shadow: 0px 1px 22px rgba(#000, 0.06);
         padding: 0px 20px;
+        align-items: stretch;
     }
     &__body-item {
         width: 100%;
         position: relative;
-        height: 62px;
         display: flex;
         align-items: center;
         font-size: 15px;
@@ -116,6 +116,20 @@
         .table__body-element, .table__body-item {
             height: 31px;
             font-size: 11px;
+        }
+    }
+    &__links {
+        position: relative;
+        li {
+            line-height: 19px;
+            a {
+                font-size: 13px;
+                color: $blue;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
     }
 }

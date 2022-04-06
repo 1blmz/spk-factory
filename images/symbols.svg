@@ -71,14 +71,14 @@
         </symbol>
         <symbol id="arrowTop" viewBox="0 0 12.58 13.122">
             <g id="arrow" transform="translate(1.414 12.122) rotate(-90)">
-                <path id="Line" d="M3,12H13.948" transform="translate(-3 -7.124)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" fill-rule="evenodd"/>
-                <path id="Head" d="M13,4l4.876,4.876L13,13.751" transform="translate(-6.753 -3.999)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+                <path id="Line" d="M3,12H13.948" transform="translate(-3 -7.124)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" fill-rule="evenodd"/>
+                <path id="Head" d="M13,4l4.876,4.876L13,13.751" transform="translate(-6.753 -3.999)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
             </g>
         </symbol>
         <symbol id="arrowBottom" viewBox="0 0 12.58 13.122">
             <g id="arrow" transform="translate(11.166 1) rotate(90)">
-                <path id="Line" d="M3,12H13.948" transform="translate(-3 -7.124)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" fill-rule="evenodd"/>
-                <path id="Head" d="M13,4l4.876,4.876L13,13.751" transform="translate(-6.753 -3.999)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+                <path id="Line" d="M3,12H13.948" transform="translate(-3 -7.124)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" fill-rule="evenodd"/>
+                <path id="Head" d="M13,4l4.876,4.876L13,13.751" transform="translate(-6.753 -3.999)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
             </g>
         </symbol>
         <symbol id="logotype" viewBox="0 0 21.958 11.164">
@@ -108,6 +108,9 @@
                 <path id="Контур_9686" data-name="Контур 9686" d="M234.862,692.2a3.19,3.19,0,0,1-.158,1.258,1.441,1.441,0,0,1-2.663.062,3.809,3.809,0,0,1,0-2.661,1.293,1.293,0,0,1,1.274-.871,1.354,1.354,0,0,1,1.342.836A3.043,3.043,0,0,1,234.862,692.2Z" transform="translate(-219.091 -669.406)" stroke="none"/>
                 <path id="Контур_9687" data-name="Контур 9687" d="M224.591,692.209c0-.574.009-1.149,0-1.723-.007-.284.1-.37.382-.379,1.3-.038,1.882.513,1.893,1.824a4.834,4.834,0,0,1-.08,1.142,1.627,1.627,0,0,1-2,1.219c-.216-.056-.19-.213-.192-.359,0-.575,0-1.149,0-1.724Z" transform="translate(-219.297 -669.403)" stroke="none"/>
             </g>
+        </symbol>
+        <symbol id="path-object-stat" viewBox="0 0 98.548 108.935">
+            <path id="Контур_9910" data-name="Контур 9910" d="M355.82,1275l33.573,19.383a15.7,15.7,0,0,1,7.85,13.6v38.767a15.7,15.7,0,0,1-7.85,13.6l-33.573,19.383a15.7,15.7,0,0,1-15.7,0l-33.573-19.383a15.7,15.7,0,0,1-7.851-13.6v-38.767a15.7,15.7,0,0,1,7.851-13.6L340.119,1275A15.7,15.7,0,0,1,355.82,1275Z" transform="translate(-298.695 -1272.893)"/>
         </symbol>
     </defs>
 </svg>

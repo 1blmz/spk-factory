@@ -14,6 +14,8 @@ $hoverBlue: #007eb5;
 @import 'pages/_typical';
 @import 'pages/_activity';
 @import 'pages/_objects';
+@import 'pages/_object';
+@import 'pages/_tenders';
 
 h1 {
     font-size: 44px;
@@ -206,6 +208,18 @@ p {
     &__tab--active {
         a {
             background: $blue!important;
+            color: #fff;
+        }
+    }
+}
+
+.btn {
+    &.btn--border {
+        background: transparent;
+        border: solid 1px $blue;
+        color: $blue;
+        &:hover {
+            background: $blue;
             color: #fff;
         }
     }

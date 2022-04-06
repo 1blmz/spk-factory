@@ -1,0 +1,100 @@
+.object {
+    position: relative;
+    .typical__img {
+        margin-bottom: 30px;
+    }
+    &__stats {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    &__stat-item {
+        position: relative;
+        text-align: center;
+        &:hover {
+            .object__stat-item-icon {
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__stat-item-icon {
+        margin-bottom: 15px;
+        position: relative;
+        transition: 0.25s ease;
+    }
+    &__stat-item-bg {
+        width: 98px;
+        height: 105px;
+        position: relative;
+    }
+    &__stat-item-i {
+        width: 43px;
+        height: 43px;
+        color: #000;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__stat-item-description {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: bold;
+    }
+    &__description {
+        position: relative;
+        margin-bottom: 30px;
+        p {
+            width: 100%;
+        }
+    }
+    .objects__list-item {
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .object {
+        &__stats {
+            flex-wrap: wrap;
+        }
+        &__stat-item {
+            width: 50%;
+            margin-bottom: 20px;
+            &:nth-last-child(-n+2) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .object .objects__list-item {
+        width: calc(100% / 2 - 10px);
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .object .objects__list-item {
+        width: 100%;
+        margin: 0!important;
+        margin-bottom: 20px!important;
+    }
+    .object {
+        &__description {
+            .btn {
+                width: 100%;
+            }
+        }
+        &__stat-item-bg {
+            width: 78px;
+            height: 85px;
+        }
+        &__stat-item-i {
+            width: 33px;
+            height: 33px;
+        }
+        &__stat-item-description {
+            font-size: 12px!important;
+        }
+    }
+}

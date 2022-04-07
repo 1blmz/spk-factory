@@ -24,6 +24,8 @@ $hoverBlue: #007eb5;
 @import 'pages/_projects';
 @import 'pages/_jobs';
 
+@import 'modals/_default';
+
 h1 {
     font-size: 44px;
 }
@@ -270,4 +272,22 @@ input[type=file] {
     overflow: hidden;
     position: absolute;
     z-index: -1;
+}
+
+.btn {
+    .icon {
+        margin-right: 10px;
+    }
+}
+
+.question--job {
+    textarea {
+        min-height: calc(100% - 60px);
+        margin-bottom: 10px;
+    }
+    .question__right-item {
+        input {
+            margin-bottom: 10px;
+        }
+    }
 }

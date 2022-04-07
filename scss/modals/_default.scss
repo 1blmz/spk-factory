@@ -1,0 +1,192 @@
+body.active {
+    overflow: hidden;
+}
+
+body.active .header, body.active .sections {
+    filter: blur(8px);
+    overflow: hidden;
+}
+
+.overlayed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    background: rgba(#000, 0.24);
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 30px;
+    padding-top: 60px;
+    &.animation-closed {
+        .popup {
+            animation: slideOut 0.3s ease;
+            animation-fill-mode: forwards;
+            transform: translateX(0);
+            opacity: 1;
+        }
+        @keyframes slideOut {
+            100% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+        }
+    }
+}
+
+.overlayed.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    width: 540px;
+    background: rgba(#fff, 0.85);
+    backdrop-filter: blur(10px);
+    position: relative;
+    display: none;
+    visibility: hidden;
+    animation-delay: 1000s;
+    animation: slideIn 0.3s ease;
+    transform: translateY(100%);
+    animation-fill-mode: forwards;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    @keyframes slideIn {
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    &__closed {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__close {
+        color: $blue;
+        padding: 20px;
+        padding-bottom: 0;
+        &:hover {
+            color: #000;
+        }
+    }
+    &__inner {
+        padding: 30px;
+        padding-top: 0;
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 30px;
+        b {
+            color: $blue;
+        }
+    }
+    &__review-form {
+        position: relative;
+    }
+    &__review-input {
+        width: calc(100% / 2 - 7px);
+        margin-bottom: 14px;
+        p {
+            font-size: 9px;
+            line-height: 14px;
+            a {
+                color: $blue;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        input, .btn {
+            width: 100%;
+        }
+        button, .btn {
+            height: 43px;
+        }
+        textarea {
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 135px;
+            max-height: 135px;
+            padding: 12px;
+        }
+        .btn {
+            border: solid 1px $blue;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    &__review-input--width {
+        width: 100%;
+    }
+    &__review-input-label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    &__review-input-label--small {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    &.popup--thank {
+        background: $blue;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -61px;
+            left: 40px;
+            border: 30px solid transparent;
+            border-top: solid 44px;
+            color: $blue;
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+        .popup__close {
+            color: #fff;
+            &:hover {
+                color: #000;
+            }
+        }
+        .popup__inner {
+            text-align: center;
+            color: #fff;
+        }
+    }
+    &__logotype {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 40px;
+        img {
+            width: 195px;
+            height: 20px;
+        }
+    }
+}
+.popup.active {
+    display: block;
+    visibility: visible;
+}
+
+@media only screen and (max-width: 540px) {
+    .overlayed {
+        padding: 0;
+        .popup {
+            width: 100%;
+            margin: 0;
+            &__review-input {
+                width: 100%;
+            }
+        }
+    }
+}

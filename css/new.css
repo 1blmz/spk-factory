@@ -4230,8 +4230,8 @@ input[type=file] {
 }
 
 .header__dropdown {
-  -webkit-box-shadow: inherit !important;
-          box-shadow: inherit !important;
+  -webkit-box-shadow: 1px 13px 4em rgba(0, 0, 0, 0.16);
+          box-shadow: 1px 13px 4em rgba(0, 0, 0, 0.16);
 }
 
 .header__dropdown li:last-child a {

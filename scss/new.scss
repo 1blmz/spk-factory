@@ -305,3 +305,23 @@ input[type=file] {
 .header__links li {
     position: relative;
 }
+
+.header.header--fixed .header__dropdown, .header.header--white .header__dropdown {
+    background: rgba(#fff, 0.65);
+}
+
+.header__dropdown {
+    box-shadow: inherit!important;
+}
+
+.header__dropdown li:last-child a {
+    border: 0;
+}
+
+.header__dropdown a {
+    border-bottom: solid 1px #a5a5a5;
+    &:hover {
+        background: $blue;
+        color: #fff!important;
+    }
+}

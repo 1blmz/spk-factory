@@ -58,6 +58,16 @@
             }
         }
     }
+    &__warn {
+        position: relative;
+        font-size: 12px;
+        padding-top: 8px;
+        .icon {
+            width: 6px;
+            height: 6px;
+            color: $blue;
+        }
+    }
     .tabs__tab {
         width: calc(100% / 4 - 10px);
     }

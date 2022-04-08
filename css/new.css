@@ -2846,6 +2846,18 @@
   margin-right: 8px;
 }
 
+.jobs__warn {
+  position: relative;
+  font-size: 12px;
+  padding-top: 8px;
+}
+
+.jobs__warn .icon {
+  width: 6px;
+  height: 6px;
+  color: #02A0E4;
+}
+
 .jobs .tabs__tab {
   width: calc(100% / 4 - 10px);
 }
@@ -4208,4 +4220,8 @@ input[type=file] {
   .home__slider {
     height: 895px;
   }
+}
+
+.header__links li {
+  position: relative;
 }

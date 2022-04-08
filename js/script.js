@@ -9,56 +9,53 @@ $(document).ready(function() {
             {
                 position: 'bottom',
                 content: [
-                    `
-                    <div class="mb-bottom d-flex flex-column">
-                        <div class="mb-info d-flex flex-column">
-                            <a href="#" class="mb-info__item d-flex align-center">
-                                <svg class="icon"><use xlink:href="images/symbols.svg#mapMaker"></use></svg>
-                                <span>Пермь, ул. Героев Хасана 45А</span>
-                            </a>
-                            <a href="mailto:info@proftest.ru" class="mb-info__item d-flex align-center">
-                                <svg class="icon"><use xlink:href="images/symbols.svg#mail"></use></svg>
-                                <span>info@proftest.ru</span>
-                            </a>
-                            <a href="tel:79002224132" class="mb-info__item d-flex align-center">
-                                <svg class="icon"><use xlink:href="images/symbols.svg#phone"></use></svg>
-                                <span>+7 (900) 222 41-32</span>
-                            </a>
-                        </div>
-                        <div class="mb-socials d-flex align-center">
-                            <div class="question__socials d-flex align-center justify-space-between">
-                                <a href="#">
-                                    <svg class="icon"><use xlink:href="images/symbols.svg#ok"></use></svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon"><use xlink:href="images/symbols.svg#instagram"></use></svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon"><use xlink:href="images/symbols.svg#youtube"></use></svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon"><use xlink:href="images/symbols.svg#twitter"></use></svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon"><use xlink:href="images/symbols.svg#whatsapp"></use></svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon"><use xlink:href="images/symbols.svg#viber"></use></svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon"><use xlink:href="images/symbols.svg#telegram"></use></svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon"><use xlink:href="images/symbols.svg#vk"></use></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mb-text d-flex align-center justify-center">
-                            <span>Создание и продвижение сайтов - Praweb.ru</span>
-                        </div>
-                    </div>
-
-                    `
+                    "'<div class='mb-bottom d-flex flex-column'>" +
+                        "'<div class='mb-info d-flex flex-column'>" +
+                            "'<a href='#' class='mb-info__item d-flex align-center'>" +
+                                "'<svg class='icon'><use xlink:href='images/symbols.svg#mapMaker'></use></svg> " +
+                                "'<span>Пермь, ул. Героев Хасана 45А</span>" +
+                            "'</a>" +
+                            "'<a href='mailto:info@proftest.ru' class='mb-info__item d-flex align-center'>" +
+                            "'<svg class='icon'><use xlink:href='images/symbols.svg#mail'></use></svg>" +
+                            "'<span>info@proftest.ru</span>" +
+                            "'</a>" +
+                            "'<a href='tel:79002224132' class='mb-info__item d-flex align-center'>" +
+                            "'<svg class='icon'><use xlink:href='images/symbols.svg#phone'></use></svg>" +
+                            "'<span>+7 (900) 222 41-32</span>" +
+                            "'</a>" +
+                            "'</div>" +
+                            "'<div class='mb-socials d-flex align-center'>" +
+                            "'<div class='question__socials d-flex align-center justify-space-between'>" +
+                            "' <a href='#'>" +
+                            "'<svg class='icon'><use xlink:href='images/symbols.svg#ok'></use></svg>" +
+                            "'</a>" +
+                            "'<a href='#'>" +
+                            "'<svg class='icon'><use xlink:href='images/symbols.svg#instagram'></use></svg>" +
+                                "'</a>" +
+                                "'<a href='#'>" +
+                                    "'<svg class='icon'><use xlink:href='images/symbols.svg#youtube'></use></svg>" +
+                                "'</a>" +
+                                "'<a href='#'>" +
+                                    "'<svg class='icon'><use xlink:href='images/symbols.svg#twitter'></use></svg>" +
+                                "'</a>" +
+                                "'<a href='#'>" +
+                                    "'<svg class='icon'><use xlink:href='images/symbols.svg#whatsapp'></use></svg>" +
+                                "'</a>" +
+                                "'<a href='#'>" +
+                                    "'<svg class='icon'><use xlink:href='images/symbols.svg#viber'></use></svg>" +
+                                "'</a>" +
+                                "'<a href='#'>" +
+                                    "'<svg class='icon'><use xlink:href='images/symbols.svg#telegram'></use></svg>" +
+                                "'</a>" +
+                                "'<a href='#'>" +
+                                    "'<svg class='icon'><use xlink:href='images/symbols.svg#vk'></use></svg>" +
+                                "'</a>" +
+                            "'</div>" +
+                        "'</div>" +
+                        "'<div class='mb-text d-flex align-center justify-center'>" +
+                            "'<span>Создание и продвижение сайтов - Praweb.ru</span>" +
+                        "'</div>" +
+                    "'</div>"
                 ]
             }
         ],

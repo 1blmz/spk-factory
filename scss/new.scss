@@ -295,3 +295,9 @@ input[type=file] {
 .sections__section--border {
     border-bottom: solid 1px rgba(#707070, 0.11);
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+    .home__slider {
+        height: 895px;
+    }
+}

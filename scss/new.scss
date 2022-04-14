@@ -325,3 +325,28 @@ input[type=file] {
         color: #fff!important;
     }
 }
+
+.fancybox__backdrop {
+    background: var(--fancybox-bg, rgba(255, 255, 255, 1))!important;
+}
+
+.carousel__button {
+    color: #666666!important;
+    box-shadow: inherit!important;
+}
+
+.carousel__button svg {
+    filter: none!important;
+}
+
+.fancybox__toolbar {
+    background: #fff!important;
+}
+
+.fancybox__toolbar__items--left {
+    display: none!important;
+}
+
+.fancybox__thumbs .carousel__slide {
+    width: var(--fancybox-thumbs-width, 236px)!important;
+}

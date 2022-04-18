@@ -4359,3 +4359,7 @@ input[type=file] {
   bottom: 10px;
   opacity: 1;
 }
+
+.header__search .btn .icon {
+  margin-right: 0;
+}

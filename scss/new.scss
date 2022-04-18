@@ -8,6 +8,7 @@ $hoverBlue: #007eb5;
 @import 'elements/_feedback';
 @import 'elements/_select';
 @import 'elements/_video';
+@import 'elements/_buyhome';
 
 @import 'pages/_category';
 @import 'pages/_product';
@@ -349,4 +350,19 @@ input[type=file] {
 
 .fancybox__thumbs .carousel__slide {
     width: var(--fancybox-thumbs-width, 236px)!important;
+}
+
+.header__links li a {
+    &:hover {
+        &:before {
+            width: 100%;
+        }
+    }
+    &:before {
+        background: $blue;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+        opacity: 1;
+    }
 }

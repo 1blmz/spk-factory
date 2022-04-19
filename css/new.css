@@ -22,7 +22,7 @@
 }
 
 .breadcrumb li:last-child p {
-  color: #02A0E4;
+  color: #000;
 }
 
 @media only screen and (max-width: 525px) {

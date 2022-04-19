@@ -374,3 +374,9 @@ input[type=file] {
 .home__slider-video:before {
     width: 50%;
 }
+
+@media (max-width: 525px) {
+    .home__slider-video:before {
+        width: 100%;
+    }
+}

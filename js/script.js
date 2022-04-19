@@ -85,7 +85,7 @@ $(document).ready(function() {
         arrows: false,
         appendDots: $('.home__slide-navigation-inner'),
         dotsClass: 'home__slide-dots',
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5000,
         draggable: false,
         customPaging : function(slider, i) {

@@ -14,6 +14,32 @@
             opacity: .67;
         }
     }
+    &__request-form {
+        a {
+            color: #fff;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+    }
+    &__reviews-user-info-top {
+        position: relative;
+        margin-bottom: 20px;
+        a {
+            padding: 5px 12px;
+            border-radius: 50px;
+            background: rgba($blue, 0.2);
+            font-size: 12px;
+            font-weight: bold;
+            color: $blue;
+            &:hover {
+                background: $blue;
+                color: #fff;
+            }
+        }
+    }
     &__video {
         width: 100%;
         height: 656px;
@@ -388,8 +414,8 @@
         border-radius: 50px;
         background: $blue;
         padding: 5px 10px;
-        margin-bottom: 20px;
         display: inline-block;
+        margin-right: 10px;
     }
     &__reviews-add {
         margin-top: 30px;

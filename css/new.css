@@ -2876,6 +2876,35 @@
   opacity: .67;
 }
 
+.jobs__request-form a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.jobs__request-form a:hover {
+  text-decoration: none;
+  color: #02A0E4;
+}
+
+.jobs__reviews-user-info-top {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.jobs__reviews-user-info-top a {
+  padding: 5px 12px;
+  border-radius: 50px;
+  background: rgba(2, 160, 228, 0.2);
+  font-size: 12px;
+  font-weight: bold;
+  color: #02A0E4;
+}
+
+.jobs__reviews-user-info-top a:hover {
+  background: #02A0E4;
+  color: #fff;
+}
+
 .jobs__video {
   width: 100%;
   height: 656px;
@@ -3344,8 +3373,8 @@
   border-radius: 50px;
   background: #02A0E4;
   padding: 5px 10px;
-  margin-bottom: 20px;
   display: inline-block;
+  margin-right: 10px;
 }
 
 .jobs__reviews-add {

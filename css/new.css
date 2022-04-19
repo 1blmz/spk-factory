@@ -3475,6 +3475,15 @@
           box-shadow: inherit;
 }
 
+.job__name {
+  position: relative;
+  width: 100%;
+  font-weight: bold;
+  z-index: 1;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 975px) {
   .jobs__home-info {
     -ms-flex-wrap: wrap;

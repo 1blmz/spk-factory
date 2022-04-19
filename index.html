@@ -446,7 +446,7 @@
                                 </svg>                  
                             </div>
                             <div class="stats__item-info d-flex flex-column align-start justify-start">
-                                <label>В ТОПе застройщиков <br> Пермского края</label>
+                                <label>ТОП застройщиков <br> Пермского края</label>
                                 <h1 data-num="3" class="counter">0</h1>
                             </div>
                         </div>
@@ -899,6 +899,13 @@
             separator: ' ', 
             decimal: '.',
         };
+        const optionsSmall = {
+            startVal: 100,
+            useEasing: true, 
+            useGrouping: true, 
+            separator: '', 
+            decimal: '.',
+        };
         var counterParent = document.getElementById('counter');
         var children = counterParent.children;
 
@@ -907,8 +914,11 @@
             for (var i = 0; i < children.length; i++) {
                 var item = document.getElementById(children[i].id).querySelector('.counter');
                 var countValue = item.getAttribute('data-num');
-
-                var countUP = new CountUp(item, 100, countValue, 0, 2, options);
+                if (countValue < 2000) {
+                    var countUP = new CountUp(item, 100, countValue, 0, 2, optionsSmall);
+                } else {
+                    var countUP = new CountUp(item, 100, countValue, 0, 2, options);
+                }
                 if (!countUP.error) {
                     countUP.start();
                 }

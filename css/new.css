@@ -4369,3 +4369,7 @@ input[type=file] {
 .header__search .btn .icon {
   margin-right: 0;
 }
+
+.home__slider-video:before {
+  width: 50%;
+}

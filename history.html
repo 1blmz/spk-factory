@@ -598,7 +598,7 @@
     <script src="js/countup.js"></script>
     <script>
         $('.history__time-slider').slick({
-            slidesToShow: 9,
+            slidesToShow: 7,
             slidesToScroll: 1,
             infinite: false,
             arrows: false,
@@ -606,17 +606,18 @@
             asNavFor: '.history__time-slider-info',
             focusOnSelect: true,
             draggable: true,
+            centerMode: true,
             responsive: [
                 {
                     breakpoint: 1025,
                     settings: {
-                        slidesToShow: 6,
+                        slidesToShow: 4,
                     }
                 },
                 {
                     breakpoint: 495,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     }
                 },
             ]

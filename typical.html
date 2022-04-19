@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/ripple.css">
     <link rel="stylesheet" href="fonts/Century Gothic/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>СтройПанельКомплект | Акционерное общество</title>
 </head>
@@ -220,7 +221,7 @@
                             <p>&nbsp;</p>
                             <h1>Ссылки</h1>
                             <p>&nbsp;</p>
-                            <p>На сайте может встречаться несколько видов ссылок. Внешние ссылки ведут на сторонние сайты, а внутренние на страницы вашего сайта. Их можно оформить красиво: например, <a href="#">ссылка на наш сайт и наше портфолио</a> - круто, не правда ли?</p>
+                            <p>На сайте может встречаться несколько видов ссылок. Внешние ссылки ведут на сторонние сайты, а внутренние на страницы вашего сайта. Их можно оформить красиво: например, <a href="#">ссылка на наш сайт</a> и <a href="#">наше портфолио</a> - круто, не правда ли?</p>
                             <p>&nbsp;</p>
                             <p>В редакторе очень легко создавать их. Попробуйте!</p>
                             <p>&nbsp;</p>
@@ -334,28 +335,34 @@
                     <div class="activity" style="margin-top: 30px;">
                         <h5>Галерея</h5>
                         <div class="activity__slider d-flex">
-                            <a href="/activity-opened.html" class="activity__item">
+                            <a href="images/activity/1.png" class="activity__item fancybox" data-fancybox="gallery1">
                                 <img src="images/activity/1.png">
+                                <div class="activity__gallery">
+                                    <img src="images/activity/1.png" data-fancybox="gallery1">
+                                </div>
                                 <b>Производственная деятельность</b>
                             </a>
-                            <a href="/activity-opened.html" class="activity__item">
+                            <a href="images/activity/2.png" class="activity__item fancybox" data-fancybox="gallery2">
                                 <img src="images/activity/2.png">
+                                <div class="activity__gallery">
+                                    <img src="images/activity/2.png" data-fancybox="gallery2">
+                                </div>
                                 <b>Производственная деятельность</b>
                             </a>
-                            <a href="/activity-opened.html" class="activity__item">
-                                <img src="images/activity/3.png">
+                            <a href="images/activity/3.png" class="activity__item fancybox" data-fancybox="gallery3">
+                                <img src="images/activity/3.png" data-fancybox="gallery3">
                                 <b>Производственная деятельность</b>
                             </a>
-                            <a href="/activity-opened.html" class="activity__item">
-                                <img src="images/activity/1.png">
+                            <a href="images/activity/1.png" class="activity__item fancybox" data-fancybox="gallery4">
+                                <img src="images/activity/1.png" data-fancybox="gallery4">
                                 <b>Производственная деятельность</b>
                             </a>
-                            <a href="/activity-opened.html" class="activity__item">
-                                <img src="images/activity/2.png">
+                            <a href="images/activity/2.png" class="activity__item fancybox" data-fancybox="gallery5">
+                                <img src="images/activity/2.png" data-fancybox="gallery5">
                                 <b>Производственная деятельность</b>
                             </a>
-                            <a href="/activity-opened.html" class="activity__item">
-                                <img src="images/activity/3.png">
+                            <a href="images/activity/3.png" class="activity__item fancybox" data-fancybox="gallery6">
+                                <img src="images/activity/3.png" data-fancybox="gallery6">
                                 <b>Производственная деятельность</b>
                             </a>
                         </div>
@@ -563,6 +570,7 @@
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=8ff9a0c1-6605-475a-9a34-6aa2bf864d6d"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
     <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/phoneMask.js"></script>
     <script src="js/jquery.datetimepicker.full.min.js"></script>
     <script src="js/mmenu.js"></script>
@@ -578,6 +586,7 @@
             arrows: false,
             dots: false,
             autoplay: true,
+            infinite: false,
             autoPlaySpeed: 3000
         });
         ymaps.ready(function () {

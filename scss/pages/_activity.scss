@@ -66,6 +66,9 @@
             margin: 0px 8px;
         }
     }
+    &__gallery {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 975px) {

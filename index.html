@@ -759,8 +759,8 @@
                                 </li>
                             </ul>
                             <div class="footer__btns d-flex flex-column">
-                                <a href="#" class="btn btn--small is-ripples">Заказать звонок</a>
-                                <a href="#" class="btn btn--small is-ripples">Получить прайс</a>
+                                <a href="#" class="btn btn--small is-ripples" rel="popup" data-popup="popup--request">Заказать звонок</a>
+                                <a href="#" class="btn btn--small is-ripples" rel="popup" data-popup="popup--request2">Получить прайс</a>
                             </div>
                         </div>
                     </div>
@@ -785,6 +785,96 @@
                 </div>
             </div>
         </div>
+        <div class="overlayed">
+            <div class="popup popup--request d-flex flex-column">
+                <div class="popup__closed">
+                    <a href="#" class="popup__close">
+                        <svg class="icon"><use xlink:href="images/symbols.svg#close"></use></svg>
+                    </a>
+                </div>
+                <div class="popup__inner">
+                    <div class="popup__title d-flex flex-column align-center">
+                        <h4>Заказать звонок</b></h4>
+                    </div>
+                    <div class="popup__review-form popup__review-form--request d-flex flex-wrap justify-space-between">
+                        <div class="popup__review-input popup__review-input--width">
+                            <input type="text" placeholder="Имя *">
+                        </div>
+                        <div class="popup__review-input popup__review-input--width">
+                            <input type="text" name="phone" placeholder="Телефон *">
+                        </div>
+                        <div class="popup__review-input">
+                            <p>Отправляя заявку, вы соглашаетесь с <a href="#">правилами обработки персональных данных и политикой конфиденциальности</a>.</p>
+                        </div>
+                        <div class="popup__review-input">
+                            <button type="submit" class="btn" rel="popup" data-popup="popup--thank">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup--request2 d-flex flex-column">
+                <div class="popup__closed">
+                    <a href="#" class="popup__close">
+                        <svg class="icon"><use xlink:href="images/symbols.svg#close"></use></svg>
+                    </a>
+                </div>
+                <div class="popup__inner">
+                    <div class="popup__title d-flex flex-column align-center">
+                        <h4>Получить прайс лист</b></h4>
+                    </div>
+                    <div class="popup__review-form popup__review-form--request d-flex flex-wrap justify-space-between">
+                        <div class="popup__review-input popup__review-input--width">
+                            <input type="text" placeholder="Имя *">
+                        </div>
+                        <div class="popup__review-input popup__review-input--width">
+                            <input type="text" name="phone" placeholder="Телефон *">
+                        </div>
+                        <div class="popup__review-input popup__review-input--width">
+                            <input type="text" name="email" placeholder="E-mail *">
+                        </div>
+                        <div class="popup__review-input select popup__review-input--width">
+                            <div class="select__input is-ripples"  data-color="#6080B0" data-opacity="0.2" data-duration="0.3">
+                                <input type="text" placeholder="Выберите продукцию *" disabled>
+                            </div>
+                            <ul class="select__dropdown">
+                                <li><a href="#" class="is-ripples" data-color="#6080B0" data-opacity="0.2" data-duration="0.3"><span>ЖБИ</span></a></li>
+                                <li><a href="#" class="is-ripples" data-color="#6080B0" data-opacity="0.2" data-duration="0.3"><span>Металлоизделия</span></a></li>
+                                <li><a href="#" class="is-ripples" data-color="#6080B0" data-opacity="0.2" data-duration="0.3"><span>Арматурные изделия</span></a></li>
+                                <li><a href="#" class="is-ripples" data-color="#6080B0" data-opacity="0.2" data-duration="0.3"><span>Пенополистирол</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="popup__review-input">
+                            <p>Отправляя заявку, вы соглашаетесь с <a href="#">правилами обработки персональных данных и политикой конфиденциальности</a>.</p>
+                        </div>
+                        <div class="popup__review-input">
+                            <button type="submit" class="btn" rel="popup" data-popup="popup--thank2">Получить прайс лист</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup--thank">
+                <div class="popup__closed">
+                    <a href="#" class="popup__close">
+                        <svg class="icon"><use xlink:href="images/symbols.svg#close"></use></svg>
+                    </a>
+                </div>
+                <div class="popup__inner">
+                    <h4>Спасибо, что заказали звонок. <br> Мы перезвоним вам в течении <br> 30 минут</h4>
+                    <a href="/" class="popup__logotype"><img src="images/logotype--white.svg"></a>
+                </div>
+            </div>
+            <div class="popup popup--thank popup--thank2">
+                <div class="popup__closed">
+                    <a href="#" class="popup__close">
+                        <svg class="icon"><use xlink:href="images/symbols.svg#close"></use></svg>
+                    </a>
+                </div>
+                <div class="popup__inner">
+                    <h4>Спасибо, что заказали прайс лист. <br> Мы вышлем документ<br> вам на почту</h4>
+                    <a href="/" class="popup__logotype"><img src="images/logotype--white.svg"></a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://yandex.st/jquery/2.2.3/jquery.min.js"></script>
@@ -800,6 +890,7 @@
     <script src="js/script.js"></script>
     <script src="js/ripple.js"></script>
     <script src="js/countup.js"></script>
+    <script src="js/modal.js"></script>
     <script>
         const options = {
             startVal: 100,

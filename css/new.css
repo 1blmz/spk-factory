@@ -4382,3 +4382,7 @@ input[type=file] {
     width: 100%;
   }
 }
+
+.header.header--fixed .header__dropdown {
+  background: white !important;
+}

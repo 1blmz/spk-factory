@@ -380,3 +380,7 @@ input[type=file] {
         width: 100%;
     }
 }
+
+.header.header--fixed .header__dropdown {
+    background: rgba(255, 255, 255, 1)!important;
+}

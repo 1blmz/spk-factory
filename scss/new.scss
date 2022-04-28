@@ -384,3 +384,12 @@ input[type=file] {
 .header.header--fixed .header__dropdown {
     background: rgba(255, 255, 255, 1)!important;
 }
+
+.footer__link-b {
+    font-size: 14px!important;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+.footer__item-title {
+    pointer-events: none;
+}

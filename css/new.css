@@ -4449,3 +4449,11 @@ input[type=file] {
 .footer__item-title {
   pointer-events: none;
 }
+
+.mm-panel {
+  display: none;
+}
+
+.mm-panel--opened {
+  display: block;
+}
